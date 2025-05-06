@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Big+Shoulders:opsz,wght@10..72,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
+@root {
+    --border: 1px;
+}
+
+* {
+    font-family: "Archivo", Arial, system-ui, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.con-nav {
+    width: 100%;
+    display: flex;
+    padding: 15px 30px 15px 30px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: linear-gradient(-145deg, rgba(22, 1, 131, 1) 0%, rgba(41, 0, 255, 1) 100%);
+    color: #fff;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.con-nav-left,
+.con-nav-right {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.con-nav-right {
+    justify-content: end;
+}
+
+.con-nav-left-logo {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: fit-content;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+}
+
+.con-nav-left-logo:hover {
+    scale: 1.1;
+}
+
+.con-nav-left-logo-img {
+    width: 50px;
+    height: 50px;
+}
+
+.con-nav-left-logo-txt {
+    color: white;
+    font-size: 30px;
+    font-family: "Big Shoulders", Arial, system-ui, sans-serif;
+}
+
+.con-nav-right-menu {
+    display: flex;
+    gap: 15px;
+}
+
+.con-nav-right-link {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.25s ease-in-out;
+    line-height: 2em;
+}
+
+.con-nav-right-link:hover {
+    color: #fff;
+    border-bottom: 1px solid white;
+    transition: all 0.25s ease-in-out;
+}
+
+
+.con-nav-btn {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    color: rgba(41, 0, 255, 1);
+    font-family: "Space Grotesk", Arial, system-ui, sans-serif;
+    font-weight: 500;
+    transition: all 0.25s ease-in-out;
+}
+
+.con-nav-btn:hover {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.con-home-main-hero {
+    width: 100%;
+    height: calc(100vh - 80px);
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    background: url('../assets/HeroBackground.jpg') no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+.con-home-main-hero-body {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+}
+
+.con-home-main-hero-body-heading {
+    font-family: "Big Shoulders", Arial, system-ui, sans-serif;
+    font-size: 15vh;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+}
+
+.con-heading-italic {
+    font-style: italic;
+    font-family: "Big Shoulders", Arial, system-ui, sans-serif;
+}
+
+.con-home-main-hero-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.con-home-main-hero-arrow {
+    width: 48px;
+    height: 48px;
+}
+
+.con-home-main-hero-body p {
+    font-size: 20px;
+}
+
+.con-heading {
+    font-size: 70px;
+    font-weight: 500;
+    font-family: "Big Shoulders", Arial, system-ui, sans-serif;
+    letter-spacing: -0.03em;
+    line-height: 1.4em;
+}
+
+.bluecolor {
+    color: rgba(41, 0, 255, 1);
+}
+
+.darkbluecolor {
+    color: rgba(22, 1, 131, 1);
+    border-bottom: 1px solid 
+}
+
+.con-section {
+    padding: 20px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.con-home-goals-grid {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+}
+
+.con-home-goals-grid-item-s {
+    background: fuchsia;
+    background-size: 100%;
+    height: 200px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.con-home-goals-grid-item-lg {
+    background: fuchsia;
+    background-size: 100%;
+    height: 410px;
+    border-radius: 25px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+.con-home-goals-grid-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.con-home-goals-grid-item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 1s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.con-home-goals-grid-item:hover {
+    transform: scale(1.1);
+}
+
+.bg-1 {
+    background: url("../assets/desert-9449657_1280.jpg") rgba(0, 43, 198, 0.5);
+}
+
+.bg-2 {
+    background: url("../assets/flowers-9554400_1280.jpg") rgba(0, 43, 198, 0.5);
+}
+
+.bg-3 {
+    background: url("../assets/horse-9474544_1280.jpg") rgba(0, 43, 198, 0.5);
+}
+
+.bg-4 {
+    background: url("../assets/industry-9562428_1280.jpg") rgba(0, 43, 198, 0.5);
+}
+
+.bg-5 {
+    background: url("../assets/roof-9004113_1280.jpg") rgba(0, 43, 198, 0.5);
+}
+
+.bg-6 {
+    background: url("../assets/roof-9004113_1280.jpg") rgba(0, 43, 198, 0.5);
+}
+
+.bg-7 {
+    background: url("../assets/roof-9004113_1280.jpg") rgba(0, 43, 198, 0.5);
+}
+
+.con-home-goals-grid-item-h {
+    font-size: 50px;
+    font-style: italic;
+    font-family: "Big Shoulders";
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+    padding: 0 20px;
+}
+
+.con-divider-s {
+    width: 30%;
+    background-color: rgba(41, 0, 255, 1);
+    height: 1px;
+}
+
+.con-button {
+    background: rgba(41, 0, 255, 1);
+    color: #fff;
+    text-decoration: none;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    border: 1px solid rgba(41, 0, 255, 1);
+    border-radius: 25px;
+    padding: 10px;
+    transition: all 0.25s ease-in-out;
+}
+
+.con-button:hover {
+    color: rgba(41, 0, 255, 1);
+    background: #fff;
+}
+
+.con-button-light {
+    background: #fff;
+    color: rgba(41, 0, 255, 1);
+    text-decoration: none;
+    font-family: "Space Grotesk";
+    font-weight: 500;
+    border: 1px solid rgba(41, 0, 255, 1);
+    border-radius: 25px;
+    padding: 10px;
+    transition: all 0.25s ease-in-out;
+}
+
+.con-button-light:hover {
+    color: #fff;
+    background: 
+}
+
+.con-home-articles-grid {
+    display: flex;
+    gap: 20px;
+}
+
+.con-home-article {
+    width: 100%;
+}
+
+.con-home-article-img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 25px;
+}
