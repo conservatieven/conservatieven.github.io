@@ -1,11 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conservatieve Partij van Zandvliet</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="icon" type="image/x-icon" href="./assets/conservativeLogo.png">
+    <title>Conservatieve Partij</title>
 </head>
+
 <body>
-    <h1>Hello World</h1>
+    <nav class="con-nav" id="conNav">
+        <div class="con-nav-column column-left">
+            <div class="con-nav-menu">
+                <a href="#" class="con-nav-link">Link</a>
+                <a href="#" class="con-nav-link">Link</a>
+            </div>
+        </div>
+        <div class="con-nav-column column-center">
+            <a href="/" class="con-nav-logo">
+                <img src="./assets/conservativeLogo.png" alt="Conservatieven" class="con-nav-logo-img" id="conNavImage">
+            </a>
+        </div>
+        <div class="con-nav-column column-right">
+            <a href="#" class="con-button button">
+                BUTTON →
+            </a>
+            <div class="con-nav-hamburger button" onclick="openExtendedNav()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+    <div class="con-nav-x" id="conNavX">
+        <div class="con-nav-x-contents">
+            <div class="con-nav-hamburger button" onclick="closeExtendedNav()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                </svg>
+            </div>
+            <div class="con-nav-x-menu">
+                <a href="#" class="con-nav-x-link">ONZE <span class="con-nav-x-link-italic">DOELEN.</span></a>
+                <a href="#" class="con-nav-x-link">ONZE <span class="con-nav-x-link-italic">DOELEN.</span></a>
+                <a href="#" class="con-nav-x-link">ONZE <span class="con-nav-x-link-italic">DOELEN.</span></a>
+            </div>
+            <div class="con-nav-x-img"></div>
+            <div class="con-nav-x-circle"></div>
+            <div class="con-nav-x-circle-2"></div>
+        </div>
+        <div class="closer" onclick="closeExtendedNav()"></div>
+    </div>
+    <section class="con-home-hero">
+        <h1 class="con-home-hero-heading">WIJ WERKEN AAN <span class="con-home-hero-heading-italic">JOUW IDEALE SCHOOL.</span></h1>
+        <p style="width: 50%;">Lorem ipsum dolor sit amet, consectetur adpiscing elit. Lorem ipsum dolor sit amet, consectetur adpiscing elit.<p>
+    </section>
+    <section class="con-section">
+        <h1 class="con-heading-lg">TIJD VOOR <span class="con-heading-italic">HERVORMING.</span></h1>
+        <div class="con-goals-grid">
+            <a class="con-goals-card card-lg" href="#">
+                <div class="con-goals-card-img bg-1"></div>
+                <h3 class="con-goals-card-title">LOREM IPSUM</h3>
+            </a>
+            <div class="con-goals-column">
+                <a class="con-goals-card card-s" href="#">
+                    <div class="con-goals-card-img bg-2"></div>
+                    <h3 class="con-goals-card-title">LOREM IPSUM</h3>
+                </a>
+                <a class="con-goals-card card-s" href="#">
+                    <div class="con-goals-card-img bg-3"></div>
+                    <h3 class="con-goals-card-title">LOREM IPSUM</h3>
+                </a>
+            </div>
+            <div class="con-goals-column">
+                <a class="con-goals-card card-s" href="#">
+                    <div class="con-goals-card-img bg-4"></div>
+                    <h3 class="con-goals-card-title">LOREM IPSUM</h3>
+                </a>
+                <a class="con-goals-card card-s" href="#">
+                    <div class="con-goals-card-img bg-5"></div>
+                    <h3 class="con-goals-card-title">LOREM IPSUM</h3>
+                </a>
+            </div>
+            <div class="con-goals-column">
+                <a class="con-goals-card card-s" href="#">
+                    <div class="con-goals-card-img bg-6"></div>
+                    <h3 class="con-goals-card-title">LOREM IPSUM</h3>
+                </a>
+                <a class="con-goals-card card-s" href="#">
+                    <div class="con-goals-card-img bg-7"></div>
+                    <h3 class="con-goals-card-title">LOREM IPSUM</h3>
+                </a>
+            </div>
+        </div>
+        <a href="#" class="con-button button">
+            BUTTON →
+        </a>
+    </section>
+    <section class="con-section">
+        <div class="con-hb">
+            <div class="con-hb-text">
+                <h1 class="con-heading-lg">HIROKI BANDO</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adpiscing elit.</p>
+                <a href="#" class="con-button button">
+                    BUTTON →
+                </a>
+            </div>
+            <img src="" alt="" class="con-hb-img">
+        </div>
+    </section>
+    <script src="./source/index.js"></script>
 </body>
+
 </html>
